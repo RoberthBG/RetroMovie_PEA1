@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root {
+  --colorPrimario: #5c0f12; 
+  --colorFondo: #000; 
+  --colorTexto: #fff; 
+  --colorSecundario: #1a1a1a; 
+  --colorBotonPlay: #444; 
+  --fuentePrimaria: 'Fjalla One', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuentePrimaria);
+  background-color: var(--colorFondo);
+  color: var(--colorTexto);
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--colorPrimario);
+  padding: 1rem 0;
+}
+
+.header_contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px; /* más grande pero sin salirse del header */
+}
+
+.navbar a {
+  color: var(--colorTexto);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+/* Featured */
+.featured {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  gap: 2rem;
+}
+
+.featured-left {
+  width: 65%;
+}
+
+.featured-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.featured-info {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.featured-info h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 30%;
+  background: var(--colorSecundario); /* gris oscuro */
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.sidebar h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.sidebar p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Botón Play estilo YouTube */
+.btn-play {
+  background: var(--colorBotonPlay);
+  color: var(--colorTexto);
+  border: none;
+  width: 70px; /* tamaño fijo circular */
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Most viewed */
+.most-viewed {
+  margin: 4rem 0;
+}
+
+.most-viewed h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.movie-card {
+  background: var(--colorSecundario); /* cuadros grises */
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.movie-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-card p {
+  font-size: 1.4rem;
+}
+
+/* Footer */
+.footer {
+  background: var(--colorPrimario);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
